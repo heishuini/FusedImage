@@ -18,3 +18,5 @@ venv/
 /ImageEvaluation/wandb/
 /ImageEvaluation/__pycache__
 /ImageEvaluation/*.pth
+/RealESRGAN/crop
+/data

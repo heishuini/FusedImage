@@ -1,0 +1,16 @@
+# Core dependencies
+gradio==5.23.1
+gradio_client==1.8.0
+qwen-omni-utils==0.0.3
+librosa==0.11.0
+ffmpeg==1.4
+ffmpeg-python==0.2.0
+soundfile==0.13.1
+modelscope_studio==1.2.2
+git+https://github.com/huggingface/transformers@f742a644ca32e65758c3adb36225aef1731bd2a8
+accelerate
+av
+
+# Optional dependency
+# Uncomment the following line if you need flash-attn
+# flash-attn==2.7.4.post1
