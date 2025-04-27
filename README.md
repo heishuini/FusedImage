@@ -1,5 +1,5 @@
 This repo is just simple, and for recording the first trial.
-follow the good work:  
+Follow the good work:  
 ### (CVPR 2025) FaithDiff: Unleashing Diffusion Priors for Faithful Image Super-resolution 
 [![Hugging Face Models](https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Models-blue)](https://huggingface.co/jychen9811/FaithDiff)
 <!-- ![visitors](https://visitor-badge.laobi.icu/badge?page_id=JyChen9811/FaithDiff) -->
