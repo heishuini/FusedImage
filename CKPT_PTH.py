@@ -1,0 +1,6 @@
+LLAVA_CLIP_PATH = '../../share/921106840237/faithdiff_ckpt/openai/clip-vit-large-patch14-336/'
+LLAVA_MODEL_PATH = '../../share/921106840237/faithdiff_ckpt/llava-v1.5-13b'
+SDXL_PATH = '../../share/921106840237/faithdiff_ckpt/RealVisXL_V4.0'
+FAITHDIFF_PATH =  '../../share/921106840237/faithdiff_ckpt/faithdiff/FaithDiff.bin' 
+VAE_FP16_PATH = '../../share/921106840237/faithdiff_ckpt/sdxl-vae-fp16-fix/'
+BSRNet_PATH = '../../share/921106840237/faithdiff_ckpt/BSRNet.pth'
