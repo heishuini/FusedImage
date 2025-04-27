@@ -135,9 +135,9 @@ CUDA_VISIBLE_DEVICES=0,1 python test.py --img_dir='./dataset/RealDeg' --save_dir
 
 ---
 ### environment
- [FaithDiff](https://github.com/JyChen9811/FaithDiff) -> baseModel.
- [Qwen2.5-Omini](https://github.com/QwenLM/Qwen2.5-Omni) -> synthesis different prompts. 
- [RealESRGAN](https://github.com/xinntao/Real-ESRGAN) -> synthesis LQ-HQ image.
+ - [FaithDiff](https://github.com/JyChen9811/FaithDiff) -> baseModel.
+ - [Qwen2.5-Omini](https://github.com/QwenLM/Qwen2.5-Omni) -> synthesis different prompts. 
+ - [RealESRGAN](https://github.com/xinntao/Real-ESRGAN) -> synthesis LQ-HQ image.
 
 ### prepare
 ```Shell
