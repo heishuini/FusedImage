@@ -322,7 +322,7 @@ def load_images_degradation(input_path,output_path,file_client, degradation_mode
         print(f'Processed [{idx}/{len(input_path)}]')
 
 # 图片地址txt
-meta_info = './cropped_DIV2K_VAL.txt'
+meta_info = 'cropped_DIV2K_VAL.txt'
 # val_HR/DIV2K_HR_001.png
 
 input_folder = './'  # 匹配meta_info的根目录

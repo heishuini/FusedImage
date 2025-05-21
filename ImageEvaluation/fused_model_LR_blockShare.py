@@ -149,7 +149,7 @@ def create_dataloaders(input_root, gt_root, val_ratio=0.2, batch_size=4):
 def train_blockwise_model(
     input_root,
     gt_dir,
-    image_size=(1024, 1024),
+    image_size=(512, 512),
     block_size=16,
     batch_size=4,
     num_epochs=30,
@@ -286,8 +286,8 @@ def train_blockwise_model(
 if __name__ == "__main__":
 
     model = train_blockwise_model(
-        input_root="../../data/DIV2K_Flickr_LSDIR5000/restore",
-        gt_dir = "../../data/DIV2K_Flickr_LSDIR5000/gt_1000name",
+        input_root="../data/DIV2K_Flickr_LSDIR_1000/restore",
+        gt_dir = "../data/DIV2K_Flickr_LSDIR_1000/gt_1000",
         image_size=(512, 512),
         block_size=16,
         batch_size=4,

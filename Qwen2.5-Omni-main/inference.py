@@ -26,7 +26,7 @@ def extract_assistant_content(text):
         return None
 
 # default: Load the model on the available device(s)
-model = Qwen2_5OmniModel.from_pretrained("../../share/921106840237/quwen-omini_ckpt/", torch_dtype="auto", device_map="auto")
+model = Qwen2_5OmniModel.from_pretrained("../../../share/921106840237/quwen-omini_ckpt/", torch_dtype="auto", device_map="auto")
 del model.thinker.audio_tower
 # We recommend enabling flash_attention_2 for better acceleration and memory saving.
 # model = Qwen2_5OmniModel.from_pretrained(
@@ -35,14 +35,14 @@ del model.thinker.audio_tower
 #     device_map="auto",
 #     attn_implementation="flash_attention_2",
 # )
-processor = Qwen2_5OmniProcessor.from_pretrained("../../share/921106840237/quwen-omini_ckpt/")
+processor = Qwen2_5OmniProcessor.from_pretrained("../../../share/921106840237/quwen-omini_ckpt/")
 
 # DIV2K_VAL
 # save_root = "../data/DIV2K/crop_512/caption"
 # img_dir = "../data/DIV2K/crop_512/lq"
 
 # RealPhoto60
-save_root = "../data/RealPhoto60/caption"
+save_root = "../data/RealPhoto60/test"
 img_dir = "../data/RealPhoto60/LQ"
 
 # img_dir = "../data/DIV2K/crop_1024/lq_1024/lq" 

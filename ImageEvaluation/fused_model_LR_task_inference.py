@@ -54,49 +54,49 @@ def weighted_fusion(images, scores, image_id):
 
         # 要求result是[-1,1]之间
         # normalized_immediate = np.clip(result, -1, 1)
-        # util_image.imwrite(normalized_immediate,os.path.join('../../data/DIV2K/weighted_x4/immediate',f'{image_id:03d}_step_{i:02d}.png'))
+        # util_image.imwrite(normalized_immediate,os.path.join('../data/DIV2K/weighted_x4/immediate',f'{image_id:03d}_step_{i:02d}.png'))
         
     # clip是确保值在0~255
     normalized_img = np.clip(result, -1, 1)
-    util_image.imwrite(normalized_img,os.path.join('../../data/DIV2K/crop_512/task_result_mse_severe',f'result_{image_id:04d}.png'))
+    util_image.imwrite(normalized_img,os.path.join('../data/RealPhoto60/result_task_test',f'result_{image_id:04d}.png'))
     # cv2.imwrite('output.png', normalized_img)  # OpenCV要求uint8类型
 
 
 if __name__ == "__main__":
     # 定义8个文件夹路径
     folder_paths = {
-        "blur_haze": "../../data/DIV2K/crop_512/restoreSevere/sr_omini_blur_haze",
-        "blur_jpeg": "../../data/DIV2K/crop_512/restoreSevere/sr_omini_blur_jpeg",
-        "blur_lowlight": "../../data/DIV2K/crop_512/restoreSevere/sr_omini_blur_lowlight",
-        "blur_noise": "../../data/DIV2K/crop_512/restoreSevere/sr_omini_blur_noise",
-        "blur_noise_jpeg": "../../data/DIV2K/crop_512/restoreSevere/sr_omini_blur_noise_jpeg",
-        "blur_rain": "../../data/DIV2K/crop_512/restoreSevere/sr_omini_blur_rain",
-        "blur_raindrop": "../../data/DIV2K/crop_512/restoreSevere/sr_omini_blur_raindrop",
-        "deblur": "../../data/DIV2K/crop_512/restoreSevere/sr_omini_deblur",
-        "dehaze": "../../data/DIV2K/crop_512/restoreSevere/sr_omini_dehaze",
-        "denoise": "../../data/DIV2K/crop_512/restoreSevere/sr_omini_denoise",
-        "derain": "../../data/DIV2K/crop_512/restoreSevere/sr_omini_derain",
-        "deraindrop": "../../data/DIV2K/crop_512/restoreSevere/sr_omini_deraindrop",
-        "haze_jpeg": "../../data/DIV2K/crop_512/restoreSevere/sr_omini_haze_jpeg",
-        "haze_lowlight": "../../data/DIV2K/crop_512/restoreSevere/sr_omini_haze_lowlight",
-        "haze_noise": "../../data/DIV2K/crop_512/restoreSevere/sr_omini_haze_noise",
-        "haze_rain": "../../data/DIV2K/crop_512/restoreSevere/sr_omini_haze_rain",
-        "haze_raindrop": "../../data/DIV2K/crop_512/restoreSevere/sr_omini_haze_raindrop",
-        "jpeg": "../../data/DIV2K/crop_512/restoreSevere/sr_omini_jpeg",
-        "lowlight": "../../data/DIV2K/crop_512/restoreSevere/sr_omini_lowlight",
-        "lowlight_blur_jpeg": "../../data/DIV2K/crop_512/restoreSevere/sr_omini_lowlight_blur_jpeg",
-        "lowlight_blur_noise": "../../data/DIV2K/crop_512/restoreSevere/sr_omini_lowlight_blur_noise",
-        "lowlight_jpeg": "../../data/DIV2K/crop_512/restoreSevere/sr_omini_lowlight_jpeg",
-        "lowlight_noise": "../../data/DIV2K/crop_512/restoreSevere/sr_omini_lowlight_noise",
-        "lowlight_rain": "../../data/DIV2K/crop_512/restoreSevere/sr_omini_lowlight_rain",
-        "lowlight_raindrop": "../../data/DIV2K/crop_512/restoreSevere/sr_omini_lowlight_raindrop",
-        "noise_jpeg": "../../data/DIV2K/crop_512/restoreSevere/sr_omini_noise_jpeg",
-        "noise_rain": "../../data/DIV2K/crop_512/restoreSevere/sr_omini_noise_rain",
-        "noise_raindrop": "../../data/DIV2K/crop_512/restoreSevere/sr_omini_noise_raindrop",
-        "rain_jpeg": "../../data/DIV2K/crop_512/restoreSevere/sr_omini_rain_jpeg",
-        "raindrop_jpeg": "../../data/DIV2K/crop_512/restoreSevere/sr_omini_raindrop_jpeg",
-        "sr": "../../data/DIV2K/crop_512/restoreSevere/sr_omini_sr",
-        "universal": "../../data/DIV2K/crop_512/restoreSevere/sr_omini_universal",
+        "blur_haze": "../data/RealPhoto60/restore/sr_omini_blur_haze",
+        "blur_jpeg": "../data/RealPhoto60/restore/sr_omini_blur_jpeg",
+        "blur_lowlight": "../data/RealPhoto60/restore/sr_omini_blur_lowlight",
+        "blur_noise": "../data/RealPhoto60/restore/sr_omini_blur_noise",
+        "blur_noise_jpeg": "../data/RealPhoto60/restore/sr_omini_blur_noise_jpeg",
+        "blur_rain": "../data/RealPhoto60/restore/sr_omini_blur_rain",
+        "blur_raindrop": "../data/RealPhoto60/restore/sr_omini_blur_raindrop",
+        "deblur": "../data/RealPhoto60/restore/sr_omini_deblur",
+        "dehaze": "../data/RealPhoto60/restore/sr_omini_dehaze",
+        "denoise": "../data/RealPhoto60/restore/sr_omini_denoise",
+        "derain": "../data/RealPhoto60/restore/sr_omini_derain",
+        "deraindrop": "../data/RealPhoto60/restore/sr_omini_deraindrop",
+        "haze_jpeg": "../data/RealPhoto60/restore/sr_omini_haze_jpeg",
+        "haze_lowlight": "../data/RealPhoto60/restore/sr_omini_haze_lowlight",
+        "haze_noise": "../data/RealPhoto60/restore/sr_omini_haze_noise",
+        "haze_rain": "../data/RealPhoto60/restore/sr_omini_haze_rain",
+        "haze_raindrop": "../data/RealPhoto60/restore/sr_omini_haze_raindrop",
+        "jpeg": "../data/RealPhoto60/restore/sr_omini_jpeg",
+        "lowlight": "../data/RealPhoto60/restore/sr_omini_lowlight",
+        "lowlight_blur_jpeg": "../data/RealPhoto60/restore/sr_omini_lowlight_blur_jpeg",
+        "lowlight_blur_noise": "../data/RealPhoto60/restore/sr_omini_lowlight_blur_noise",
+        "lowlight_jpeg": "../data/RealPhoto60/restore/sr_omini_lowlight_jpeg",
+        "lowlight_noise": "../data/RealPhoto60/restore/sr_omini_lowlight_noise",
+        "lowlight_rain": "../data/RealPhoto60/restore/sr_omini_lowlight_rain",
+        "lowlight_raindrop": "../data/RealPhoto60/restore/sr_omini_lowlight_raindrop",
+        "noise_jpeg": "../data/RealPhoto60/restore/sr_omini_noise_jpeg",
+        "noise_rain": "../data/RealPhoto60/restore/sr_omini_noise_rain",
+        "noise_raindrop": "../data/RealPhoto60/restore/sr_omini_noise_raindrop",
+        "rain_jpeg": "../data/RealPhoto60/restore/sr_omini_rain_jpeg",
+        "raindrop_jpeg": "../data/RealPhoto60/restore/sr_omini_raindrop_jpeg",
+        "sr": "../data/RealPhoto60/restore/sr_omini_sr",
+        "universal": "../data/RealPhoto60/restore/sr_omini_universal",
     }
 
     model = LinearFusionModel(input_dim=32)  # 你是32组图嘛
@@ -135,7 +135,7 @@ if __name__ == "__main__":
             try:
                 # 转为numpy，值是0~1
                 im_in = util_image.imread(img_path, chn='rgb', dtype='float32')
-                # im_out = util_image.imwrite(im_in, os.path.join('../../data/DIV2K/weighted_x4/origin',f'origin_{method}_{i:02d}.png'))
+                # im_out = util_image.imwrite(im_in, os.path.join('../data/DIV2K/weighted_x4/origin',f'origin_{method}_{i:02d}.png'))
 
                 im_in_list.append(im_in)
                 # im_in_tensor = util_image.img2tensor(im_in).to(device) 

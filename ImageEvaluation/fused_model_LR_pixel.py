@@ -116,7 +116,6 @@ def train_pixel_fusion(
         "val_ratio": val_ratio
     })
 
-
     image_names = sorted(os.listdir(gt_dir))
     train_names, val_names = train_test_split(image_names, test_size=val_ratio, random_state=42)
 
@@ -266,43 +265,43 @@ def train_pixel_fusion(
 
 if __name__ == "__main__":
     folder_paths = {
-        "blur_haze": "../../data/DIV2K_Flickr_LSDIR5000/restore/sr_omini_blur_haze",
-        "blur_jpeg": "../../data/DIV2K_Flickr_LSDIR5000/restore/sr_omini_blur_jpeg",
-        "blur_lowlight": "../../data/DIV2K_Flickr_LSDIR5000/restore/sr_omini_blur_lowlight",
-        "blur_noise": "../../data/DIV2K_Flickr_LSDIR5000/restore/sr_omini_blur_noise",
-        "blur_noise_jpeg": "../../data/DIV2K_Flickr_LSDIR5000/restore/sr_omini_blur_noise_jpeg",
-        "blur_rain": "../../data/DIV2K_Flickr_LSDIR5000/restore/sr_omini_blur_rain",
-        "blur_raindrop": "../../data/DIV2K_Flickr_LSDIR5000/restore/sr_omini_blur_raindrop",
-        "deblur": "../../data/DIV2K_Flickr_LSDIR5000/restore/sr_omini_deblur",
-        "dehaze": "../../data/DIV2K_Flickr_LSDIR5000/restore/sr_omini_dehaze",
-        "denoise": "../../data/DIV2K_Flickr_LSDIR5000/restore/sr_omini_denoise",
-        "derain": "../../data/DIV2K_Flickr_LSDIR5000/restore/sr_omini_derain",
-        "deraindrop": "../../data/DIV2K_Flickr_LSDIR5000/restore/sr_omini_deraindrop",
-        "haze_jpeg": "../../data/DIV2K_Flickr_LSDIR5000/restore/sr_omini_haze_jpeg",
-        "haze_lowlight": "../../data/DIV2K_Flickr_LSDIR5000/restore/sr_omini_haze_lowlight",
-        "haze_noise": "../../data/DIV2K_Flickr_LSDIR5000/restore/sr_omini_haze_noise",
-        "haze_rain": "../../data/DIV2K_Flickr_LSDIR5000/restore/sr_omini_haze_rain",
-        "haze_raindrop": "../../data/DIV2K_Flickr_LSDIR5000/restore/sr_omini_haze_raindrop",
-        "jpeg": "../../data/DIV2K_Flickr_LSDIR5000/restore/sr_omini_jpeg",
-        "lowlight": "../../data/DIV2K_Flickr_LSDIR5000/restore/sr_omini_lowlight",
-        "lowlight_blur_jpeg": "../../data/DIV2K_Flickr_LSDIR5000/restore/sr_omini_lowlight_blur_jpeg",
-        "lowlight_blur_noise": "../../data/DIV2K_Flickr_LSDIR5000/restore/sr_omini_lowlight_blur_noise",
-        "lowlight_jpeg": "../../data/DIV2K_Flickr_LSDIR5000/restore/sr_omini_lowlight_jpeg",
-        "lowlight_noise": "../../data/DIV2K_Flickr_LSDIR5000/restore/sr_omini_lowlight_noise",
-        "lowlight_rain": "../../data/DIV2K_Flickr_LSDIR5000/restore/sr_omini_lowlight_rain",
-        "lowlight_raindrop": "../../data/DIV2K_Flickr_LSDIR5000/restore/sr_omini_lowlight_raindrop",
-        "noise_jpeg": "../../data/DIV2K_Flickr_LSDIR5000/restore/sr_omini_noise_jpeg",
-        "noise_rain": "../../data/DIV2K_Flickr_LSDIR5000/restore/sr_omini_noise_rain",
-        "noise_raindrop": "../../data/DIV2K_Flickr_LSDIR5000/restore/sr_omini_noise_raindrop",
-        "rain_jpeg": "../../data/DIV2K_Flickr_LSDIR5000/restore/sr_omini_rain_jpeg",
-        "raindrop_jpeg": "../../data/DIV2K_Flickr_LSDIR5000/restore/sr_omini_raindrop_jpeg",
-        "sr": "../../data/DIV2K_Flickr_LSDIR5000/restore/sr_omini_sr",
-        "universal": "../../data/DIV2K_Flickr_LSDIR5000/restore/sr_omini_universal",
+        "blur_haze": "../data/DIV2K_Flickr_LSDIR_1000/restore/sr_omini_blur_haze",
+        "blur_jpeg": "../data/DIV2K_Flickr_LSDIR_1000/restore/sr_omini_blur_jpeg",
+        "blur_lowlight": "../data/DIV2K_Flickr_LSDIR_1000/restore/sr_omini_blur_lowlight",
+        "blur_noise": "../data/DIV2K_Flickr_LSDIR_1000/restore/sr_omini_blur_noise",
+        "blur_noise_jpeg": "../data/DIV2K_Flickr_LSDIR_1000/restore/sr_omini_blur_noise_jpeg",
+        "blur_rain": "../data/DIV2K_Flickr_LSDIR_1000/restore/sr_omini_blur_rain",
+        "blur_raindrop": "../data/DIV2K_Flickr_LSDIR_1000/restore/sr_omini_blur_raindrop",
+        "deblur": "../data/DIV2K_Flickr_LSDIR_1000/restore/sr_omini_deblur",
+        "dehaze": "../data/DIV2K_Flickr_LSDIR_1000/restore/sr_omini_dehaze",
+        "denoise": "../data/DIV2K_Flickr_LSDIR_1000/restore/sr_omini_denoise",
+        "derain": "../data/DIV2K_Flickr_LSDIR_1000/restore/sr_omini_derain",
+        "deraindrop": "../data/DIV2K_Flickr_LSDIR_1000/restore/sr_omini_deraindrop",
+        "haze_jpeg": "../data/DIV2K_Flickr_LSDIR_1000/restore/sr_omini_haze_jpeg",
+        "haze_lowlight": "../data/DIV2K_Flickr_LSDIR_1000/restore/sr_omini_haze_lowlight",
+        "haze_noise": "../data/DIV2K_Flickr_LSDIR_1000/restore/sr_omini_haze_noise",
+        "haze_rain": "../data/DIV2K_Flickr_LSDIR_1000/restore/sr_omini_haze_rain",
+        "haze_raindrop": "../data/DIV2K_Flickr_LSDIR_1000/restore/sr_omini_haze_raindrop",
+        "jpeg": "../data/DIV2K_Flickr_LSDIR_1000/restore/sr_omini_jpeg",
+        "lowlight": "../data/DIV2K_Flickr_LSDIR_1000/restore/sr_omini_lowlight",
+        "lowlight_blur_jpeg": "../data/DIV2K_Flickr_LSDIR_1000/restore/sr_omini_lowlight_blur_jpeg",
+        "lowlight_blur_noise": "../data/DIV2K_Flickr_LSDIR_1000/restore/sr_omini_lowlight_blur_noise",
+        "lowlight_jpeg": "../data/DIV2K_Flickr_LSDIR_1000/restore/sr_omini_lowlight_jpeg",
+        "lowlight_noise": "../data/DIV2K_Flickr_LSDIR_1000/restore/sr_omini_lowlight_noise",
+        "lowlight_rain": "../data/DIV2K_Flickr_LSDIR_1000/restore/sr_omini_lowlight_rain",
+        "lowlight_raindrop": "../data/DIV2K_Flickr_LSDIR_1000/restore/sr_omini_lowlight_raindrop",
+        "noise_jpeg": "../data/DIV2K_Flickr_LSDIR_1000/restore/sr_omini_noise_jpeg",
+        "noise_rain": "../data/DIV2K_Flickr_LSDIR_1000/restore/sr_omini_noise_rain",
+        "noise_raindrop": "../data/DIV2K_Flickr_LSDIR_1000/restore/sr_omini_noise_raindrop",
+        "rain_jpeg": "../data/DIV2K_Flickr_LSDIR_1000/restore/sr_omini_rain_jpeg",
+        "raindrop_jpeg": "../data/DIV2K_Flickr_LSDIR_1000/restore/sr_omini_raindrop_jpeg",
+        "sr": "../data/DIV2K_Flickr_LSDIR_1000/restore/sr_omini_sr",
+        "universal": "../data/DIV2K_Flickr_LSDIR_1000/restore/sr_omini_universal",
     }
 
     # 定义输入图像路径
     input_dirs = [value for key, value in folder_paths.items()]
-    gt_dir = "../../data/DIV2K_Flickr_LSDIR5000/gt_1000name"
+    gt_dir = "../data/DIV2K_Flickr_LSDIR_1000/gt_1000"
 
     # 训练模型
     model = train_pixel_fusion(

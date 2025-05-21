@@ -48,41 +48,41 @@ if cpu_offload:
 
 # DIV2K_Flickr_LSDIR
 # DIV2K_VAL
-# DIV2K/crop_512/restoreSevere
+# DIV2K/crop_512/restoreTest
 save_dir_dict = {
-    "../data/DIV2K/crop_512/restoreSevere/restore/sr_llava": "../data/DIV2K/crop_512/caption/lq_caption_llava",
-    "../data/DIV2K/crop_512/restoreSevere/restore/sr_omini_universal": "../data/DIV2K/crop_512/caption/lq_caption_omini_universal",
-    "../data/DIV2K/crop_512/restoreSevere/restore/sr_omini_blur_haze": "../data/DIV2K/crop_512/caption/lq_caption_omini_blur_haze",
-    "../data/DIV2K/crop_512/restoreSevere/restore/sr_omini_blur_jpeg": "../data/DIV2K/crop_512/caption/lq_caption_omini_blur_jpeg",
-    "../data/DIV2K/crop_512/restoreSevere/restore/sr_omini_blur_lowlight": "../data/DIV2K/crop_512/caption/lq_caption_omini_blur_lowlight",
-    "../data/DIV2K/crop_512/restoreSevere/restore/sr_omini_blur_noise": "../data/DIV2K/crop_512/caption/lq_caption_omini_blur_noise",
-    "../data/DIV2K/crop_512/restoreSevere/restore/sr_omini_blur_noise_jpeg": "../data/DIV2K/crop_512/caption/lq_caption_omini_blur_noise_jpeg",
-    "../data/DIV2K/crop_512/restoreSevere/restore/sr_omini_blur_rain": "../data/DIV2K/crop_512/caption/lq_caption_omini_blur_rain",
-    "../data/DIV2K/crop_512/restoreSevere/restore/sr_omini_blur_raindrop": "../data/DIV2K/crop_512/caption/lq_caption_omini_blur_raindrop",
-    "../data/DIV2K/crop_512/restoreSevere/restore/sr_omini_deblur": "../data/DIV2K/crop_512/caption/lq_caption_omini_deblur",
-    "../data/DIV2K/crop_512/restoreSevere/restore/sr_omini_dehaze": "../data/DIV2K/crop_512/caption/lq_caption_omini_dehaze",
-    "../data/DIV2K/crop_512/restoreSevere/restore/sr_omini_denoise": "../data/DIV2K/crop_512/caption/lq_caption_omini_denoise",
-    "../data/DIV2K/crop_512/restoreSevere/restore/sr_omini_derain": "../data/DIV2K/crop_512/caption/lq_caption_omini_derain",
-    "../data/DIV2K/crop_512/restoreSevere/restore/sr_omini_deraindrop": "../data/DIV2K/crop_512/caption/lq_caption_omini_deraindrop",
-    "../data/DIV2K/crop_512/restoreSevere/restore/sr_omini_haze_jpeg": "../data/DIV2K/crop_512/caption/lq_caption_omini_haze_jpeg",
-    "../data/DIV2K/crop_512/restoreSevere/restore/sr_omini_haze_lowlight": "../data/DIV2K/crop_512/caption/lq_caption_omini_haze_lowlight",
-    "../data/DIV2K/crop_512/restoreSevere/restore/sr_omini_haze_noise": "../data/DIV2K/crop_512/caption/lq_caption_omini_haze_noise",
-    "../data/DIV2K/crop_512/restoreSevere/restore/sr_omini_haze_rain": "../data/DIV2K/crop_512/caption/lq_caption_omini_haze_rain",
-    "../data/DIV2K/crop_512/restoreSevere/restore/sr_omini_haze_raindrop": "../data/DIV2K/crop_512/caption/lq_caption_omini_haze_raindrop",
-    "../data/DIV2K/crop_512/restoreSevere/restore/sr_omini_jpeg": "../data/DIV2K/crop_512/caption/lq_caption_omini_jpeg",
-    "../data/DIV2K/crop_512/restoreSevere/restore/sr_omini_lowlight": "../data/DIV2K/crop_512/caption/lq_caption_omini_lowlight",
-    "../data/DIV2K/crop_512/restoreSevere/restore/sr_omini_lowlight_blur_jpeg": "../data/DIV2K/crop_512/caption/lq_caption_omini_lowlight_blur_jpeg",
-    "../data/DIV2K/crop_512/restoreSevere/restore/sr_omini_lowlight_blur_noise": "../data/DIV2K/crop_512/caption/lq_caption_omini_lowlight_blur_noise",
-    "../data/DIV2K/crop_512/restoreSevere/restore/sr_omini_lowlight_jpeg": "../data/DIV2K/crop_512/caption/lq_caption_omini_lowlight_jpeg",
-    "../data/DIV2K/crop_512/restoreSevere/restore/sr_omini_lowlight_noise": "../data/DIV2K/crop_512/caption/lq_caption_omini_lowlight_noise",
-    "../data/DIV2K/crop_512/restoreSevere/restore/sr_omini_lowlight_rain": "../data/DIV2K/crop_512/caption/lq_caption_omini_lowlight_rain",
-    "../data/DIV2K/crop_512/restoreSevere/restore/sr_omini_lowlight_raindrop": "../data/DIV2K/crop_512/caption/lq_caption_omini_lowlight_raindrop",
-    "../data/DIV2K/crop_512/restoreSevere/restore/sr_omini_noise_jpeg": "../data/DIV2K/crop_512/caption/lq_caption_omini_noise_jpeg",
-    "../data/DIV2K/crop_512/restoreSevere/restore/sr_omini_noise_rain": "../data/DIV2K/crop_512/caption/lq_caption_omini_noise_rain",
-    "../data/DIV2K/crop_512/restoreSevere/restore/sr_omini_noise_raindrop": "../data/DIV2K/crop_512/caption/lq_caption_omini_noise_raindrop",
-    "../data/DIV2K/crop_512/restoreSevere/restore/sr_omini_rain_jpeg": "../data/DIV2K/crop_512/caption/lq_caption_omini_rain_jpeg",
-    "../data/DIV2K/crop_512/restoreSevere/restore/sr_omini_raindrop_jpeg": "../data/DIV2K/crop_512/caption/lq_caption_omini_raindrop_jpeg",
-    "../data/DIV2K/crop_512/restoreSevere/restore/sr_omini_sr": "../data/DIV2K/crop_512/caption/lq_caption_omini_sr",
+    "data/DIV2K/crop_512/restoreTest/sr_llava": "data/DIV2K/crop_512/caption/lq_caption_llava",
+    "data/DIV2K/crop_512/restoreTest/sr_omini_universal": "data/DIV2K/crop_512/caption/lq_caption_omini_universal",
+    "data/DIV2K/crop_512/restoreTest/sr_omini_blur_haze": "data/DIV2K/crop_512/caption/lq_caption_omini_blur_haze",
+    "data/DIV2K/crop_512/restoreTest/sr_omini_blur_jpeg": "data/DIV2K/crop_512/caption/lq_caption_omini_blur_jpeg",
+    "data/DIV2K/crop_512/restoreTest/sr_omini_blur_lowlight": "data/DIV2K/crop_512/caption/lq_caption_omini_blur_lowlight",
+    "data/DIV2K/crop_512/restoreTest/sr_omini_blur_noise": "data/DIV2K/crop_512/caption/lq_caption_omini_blur_noise",
+    "data/DIV2K/crop_512/restoreTest/sr_omini_blur_noise_jpeg": "data/DIV2K/crop_512/caption/lq_caption_omini_blur_noise_jpeg",
+    "data/DIV2K/crop_512/restoreTest/sr_omini_blur_rain": "data/DIV2K/crop_512/caption/lq_caption_omini_blur_rain",
+    "data/DIV2K/crop_512/restoreTest/sr_omini_blur_raindrop": "data/DIV2K/crop_512/caption/lq_caption_omini_blur_raindrop",
+    "data/DIV2K/crop_512/restoreTest/sr_omini_deblur": "data/DIV2K/crop_512/caption/lq_caption_omini_deblur",
+    "data/DIV2K/crop_512/restoreTest/sr_omini_dehaze": "data/DIV2K/crop_512/caption/lq_caption_omini_dehaze",
+    "data/DIV2K/crop_512/restoreTest/sr_omini_denoise": "data/DIV2K/crop_512/caption/lq_caption_omini_denoise",
+    "data/DIV2K/crop_512/restoreTest/sr_omini_derain": "data/DIV2K/crop_512/caption/lq_caption_omini_derain",
+    "data/DIV2K/crop_512/restoreTest/sr_omini_deraindrop": "data/DIV2K/crop_512/caption/lq_caption_omini_deraindrop",
+    "data/DIV2K/crop_512/restoreTest/sr_omini_haze_jpeg": "data/DIV2K/crop_512/caption/lq_caption_omini_haze_jpeg",
+    "data/DIV2K/crop_512/restoreTest/sr_omini_haze_lowlight": "data/DIV2K/crop_512/caption/lq_caption_omini_haze_lowlight",
+    "data/DIV2K/crop_512/restoreTest/sr_omini_haze_noise": "data/DIV2K/crop_512/caption/lq_caption_omini_haze_noise",
+    "data/DIV2K/crop_512/restoreTest/sr_omini_haze_rain": "data/DIV2K/crop_512/caption/lq_caption_omini_haze_rain",
+    "data/DIV2K/crop_512/restoreTest/sr_omini_haze_raindrop": "data/DIV2K/crop_512/caption/lq_caption_omini_haze_raindrop",
+    "data/DIV2K/crop_512/restoreTest/sr_omini_jpeg": "data/DIV2K/crop_512/caption/lq_caption_omini_jpeg",
+    "data/DIV2K/crop_512/restoreTest/sr_omini_lowlight": "data/DIV2K/crop_512/caption/lq_caption_omini_lowlight",
+    "data/DIV2K/crop_512/restoreTest/sr_omini_lowlight_blur_jpeg": "data/DIV2K/crop_512/caption/lq_caption_omini_lowlight_blur_jpeg",
+    "data/DIV2K/crop_512/restoreTest/sr_omini_lowlight_blur_noise": "data/DIV2K/crop_512/caption/lq_caption_omini_lowlight_blur_noise",
+    "data/DIV2K/crop_512/restoreTest/sr_omini_lowlight_jpeg": "data/DIV2K/crop_512/caption/lq_caption_omini_lowlight_jpeg",
+    "data/DIV2K/crop_512/restoreTest/sr_omini_lowlight_noise": "data/DIV2K/crop_512/caption/lq_caption_omini_lowlight_noise",
+    "data/DIV2K/crop_512/restoreTest/sr_omini_lowlight_rain": "data/DIV2K/crop_512/caption/lq_caption_omini_lowlight_rain",
+    "data/DIV2K/crop_512/restoreTest/sr_omini_lowlight_raindrop": "data/DIV2K/crop_512/caption/lq_caption_omini_lowlight_raindrop",
+    "data/DIV2K/crop_512/restoreTest/sr_omini_noise_jpeg": "data/DIV2K/crop_512/caption/lq_caption_omini_noise_jpeg",
+    "data/DIV2K/crop_512/restoreTest/sr_omini_noise_rain": "data/DIV2K/crop_512/caption/lq_caption_omini_noise_rain",
+    "data/DIV2K/crop_512/restoreTest/sr_omini_noise_raindrop": "data/DIV2K/crop_512/caption/lq_caption_omini_noise_raindrop",
+    "data/DIV2K/crop_512/restoreTest/sr_omini_rain_jpeg": "data/DIV2K/crop_512/caption/lq_caption_omini_rain_jpeg",
+    "data/DIV2K/crop_512/restoreTest/sr_omini_raindrop_jpeg": "data/DIV2K/crop_512/caption/lq_caption_omini_raindrop_jpeg",
+    "data/DIV2K/crop_512/restoreTest/sr_omini_sr": "data/DIV2K/crop_512/caption/lq_caption_omini_sr",
 }
 
 # 单文件夹
@@ -159,7 +159,7 @@ for save_dir,json_dir in save_dir_dict.items():
             words = words[3:]
             print(words)
             if(words == []):
-                json_file = json.load(open(os.path.join("../data/DIV2K/crop_512/caption/lq_caption_omini_universal",img_name+'.json'))) 
+                json_file = json.load(open(os.path.join("data/DIV2K/crop_512/caption/lq_caption_omini_universal",img_name+'.json'))) 
                 init_text = json_file["caption"]
                 words = init_text.split()
                 words = words[3:]

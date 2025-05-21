@@ -42,7 +42,7 @@ if __name__ == '__main__':
         #          './cropped_512/Flickr2K_HR',  # 2650
         #          './cropped_512/LSDIR_HR', # 5000 
         #         ],
-        default=['./crop512_DIV2K_VAL',  # 100 
+        default=['crop/testImage/crop512_DIV2K_VAL',  # 100 
         ],
         help='Input folder, can be a list')
     parser.add_argument(
@@ -52,7 +52,7 @@ if __name__ == '__main__':
         # default=['./',
         #          './',
         #          './'],
-        default=['./',],
+        default=['crop/testImage',],
         help='Folder root, should have the length as input folders')
     parser.add_argument(
         '--meta_info',

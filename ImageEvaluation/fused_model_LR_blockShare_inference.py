@@ -112,12 +112,12 @@ model = BlockwiseLinearFusion(512, 512, block_size=16)
 model.load_state_dict(torch.load("checkpoints/block_epoch52_decay-4_batch4_block16_mse_lpips.pt"))
 weights_tensor = model.weights.detach().cpu()
 print(weights_tensor.shape) # (64, 64, 3, 32)
-input_root = "../../data/DIV2K/crop_512/restoreSevere"
+input_root = "../data/RealPhoto60/restore"
 
 blockwise_weighted_fusion(
     input_root=input_root,        # 32个版本图像的根目录
     weights=weights_tensor,                     # 权重 tensor
     block_size=16,                       # 每个 block 的大小
     device="cuda",                       # 如果有GPU，使用它
-    output_dir="../../data/DIV2K/crop_512/result_block_mse_lpips_severe"            # 输出目录
+    output_dir="../data/RealPhoto60/result_block_test"            # 输出目录
 )

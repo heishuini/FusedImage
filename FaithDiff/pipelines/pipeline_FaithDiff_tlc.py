@@ -1370,6 +1370,8 @@ class FaithDiffStableDiffusionXLPipeline(
 
                     # compute the previous noisy sample x_t -> x_t-1
                     latents_dtype = sub_latents.dtype
+                    # t是单一个，此处有50步，每次是越来越清晰的sub_latents
+                    # 而对于单步的正则模型来说，t也是单一个，但没有50步
                     sub_latents = self.scheduler.step(noise_pred, t, sub_latents, **extra_step_kwargs, return_dict=False)[0]
                     
                     views_scheduler_status[sub_num] = copy.deepcopy(self.scheduler.__dict__)
